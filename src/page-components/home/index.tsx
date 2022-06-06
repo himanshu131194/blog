@@ -3,8 +3,8 @@ import { Tag, Post } from '@/types/index';
 import * as S from './styles';
 
 import Header from '@/components/Header';
-import Tags from '@/components/Tags';
-import Posts from '@/components/Posts';
+import TagsContainer from '@/src/containers/Tags';
+import PostsContainer from '@/src/containers/Posts/';
 
 type Props = {
   tags: Tag[];
@@ -16,8 +16,12 @@ export default function HomePage({ tags, posts }: Props) {
     <S.Container>
       <Header />
       <S.Divider />
-      <Tags tags={tags} />
-      <Posts posts={posts} />
+      <TagsContainer
+        tags={tags} //
+      />
+      <PostsContainer
+        posts={posts} //
+      />
     </S.Container>
   );
 }
