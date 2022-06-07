@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 
 const global = css`
   * {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     box-sizing: border-box;
   }
@@ -19,9 +19,6 @@ const global = css`
     margin: 0px;
     padding: 0px;
   }
-  li {
-    list-style: none;
-  }
   button {
     all: unset;
   }
@@ -33,7 +30,6 @@ const global = css`
     margin: 0;
   }
   a {
-    cursor: text;
     text-decoration: none;
     color: black;
   }
