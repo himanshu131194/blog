@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo';
 
 import ErrorPage from '@/components/common/Error';
 
-export default function Custom404() {
+export default function Custom500() {
   const router = useRouter();
 
   const handleGoHome = () => router.push('/');
@@ -12,11 +12,11 @@ export default function Custom404() {
   return (
     <>
       <NextSeo
-        title="SEUNGGYU - 404" //
+        title="SEUNGGYU - 500" //
       />
       <ErrorPage
-        message="PAGE NOT FOUND" //
-        description="페이지를 찾을 수 없습니다."
+        message="Internal Server Error" //
+        description="🐛 알 수 없는 오류 발생"
         buttonText="Go To Home"
         onClick={handleGoHome}
       />
